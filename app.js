@@ -60,10 +60,59 @@ function x(){
 
 
 
-x();
+// x();
 
 
+// let person1 = {
+//   fn: function(){
+//     console.log(this)
+//   }
+// }
 
+// let person2 = {
+//   fn: function(){
+//     console.log(this);
+//   }
+// }
+
+function y() {
+  console.log(this);
+}
+
+let person = {
+  name: "dhinna",
+
+  print: function(){
+    console.log(this);
+  }
+}
+
+let person2 = function() {
+  console.log(this);
+}
+
+
+/*
+
+person.print()
+person.print.call(this) //window normal functionn only return the window object
+person2.call(person)
+
+*/
+
+
+let test = {
+  Firstname : "akashayaw",
+  print: () =>{
+    console.log(this.Firstname);
+  },
+  print2 : function() {
+    console.log(this.Firstname);
+  }
+}
+
+test.print(); //arrow function could be undefinded because window object dot have the firstName
+test.print2(); // this will show the correct answer
 
 
 
@@ -99,4 +148,4 @@ var twoSum = function(num, target) {
    console.log(reuslt);
 }
 
-twoSum([2,7,11,15], 9);
+// twoSum([2,7,11,15], 9);
