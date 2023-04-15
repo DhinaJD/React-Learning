@@ -17,4 +17,82 @@ const container = React.createElement("div", {
   id:"container"
 }, Row);
 
-root.render(container);
+// root.render(container);
+
+
+// console.log(this);
+
+
+
+
+
+let obj ={
+  fn: function() {
+    console.log(this);
+  },
+  // this obj
+
+  fn2 : () =>{
+    console.log(this);
+  }
+  // window
+}
+
+// this keyword refer to its parent in arrow funcction it will point to the widow object
+
+
+// obj.fn2();
+
+
+function x(){
+  console.log(this);
+
+  function y(){
+    console.log(this);
+  }
+
+  y();
+}
+
+
+
+x();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// numbers = [2,7,11,15], target = 9
+
+
+// var twoSum = function(num, target) {
+//   let reuslt = []
+//    for(let item of num){
+//       if(item + (item + 1) == target){
+//         reuslt.push(item)
+
+//       }
+//    }
+
+//    console.log(reuslt);
+// }
+
+// twoSum([2,7,11,15], 9);
