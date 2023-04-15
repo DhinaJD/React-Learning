@@ -39,7 +39,11 @@ let obj ={
 }
 
 // this keyword refer to its parent in arrow funcction it will point to the widow object
+/*
+its not abouut whre we are , 
+its abot how we call the keywordd
 
+*/
 
 // obj.fn2();
 
@@ -80,19 +84,19 @@ x();
 
 
 
-// numbers = [2,7,11,15], target = 9
+numbers = [2,7,11,15], target = 9
 
 
-// var twoSum = function(num, target) {
-//   let reuslt = []
-//    for(let item of num){
-//       if(item + (item + 1) == target){
-//         reuslt.push(item)
+var twoSum = function(num, target) {
+  let reuslt = []
+   for(let item of num){
+      if(item + (item + 1) == target){
+        reuslt.push(item)
 
-//       }
-//    }
+      }
+   }
 
-//    console.log(reuslt);
-// }
+   console.log(reuslt);
+}
 
-// twoSum([2,7,11,15], 9);
+twoSum([2,7,11,15], 9);
