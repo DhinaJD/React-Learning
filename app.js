@@ -111,8 +111,8 @@ let test = {
   }
 }
 
-test.print(); //arrow function could be undefinded because window object dot have the firstName
-test.print2(); // this will show the correct answer
+// test.print(); //arrow function could be undefinded because window object dot have the firstName
+// test.print2(); // this will show the correct answer
 
 
 
@@ -133,19 +133,35 @@ test.print2(); // this will show the correct answer
 
 
 
-numbers = [2,7,11,15], target = 9
+// numbers = [2,7,11,15], target = 9
 
 
-var twoSum = function(num, target) {
-  let reuslt = []
-   for(let item of num){
-      if(item + (item + 1) == target){
-        reuslt.push(item)
+// var twoSum = function(num, target) {
+//   let reuslt = []
+//    for(i=0; i< num.length; i++){
+//       for(j= i + 1; j< num.length; j++){
+//         if(num[i] + num[j] == target){
+//           reuslt.push(i);
+//           reuslt.push(j)
+//         }
+//       }
+//    }
 
-      }
-   }
+//   return reuslt;
+// }
 
-   console.log(reuslt);
-}
+// const twoSum = (array, goal) => {
+//   let indexes = [];
 
-// twoSum([2,7,11,15], 9);
+//   for(let i = 0; i < array.length; i++){
+//      for(let j = i + 1; j < array.length; j++){
+//         if (array[i] + array[j] === goal) {
+//       indexes.push(i);
+//       indexes.push(j);
+//         }
+//      }
+//   }
+//   return indexes;
+// }
+
+// console.log(twoSum([2,5,4,1,9,8], 10));
